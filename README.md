@@ -2,7 +2,7 @@
 
 Quantitative image-based cytometry (QIBC) plots from CellProfiler output, in a single offline HTML file.
 
-**Use it online:** https://lao-labtools.org/qibc/
+[**Use it online:**](https://lao-labtools.org/qibc/)
 **Or offline:** download `index.html` and open it in any modern browser. No install, no server, no internet needed.
 
 Your data is parsed in your browser and never uploaded.
