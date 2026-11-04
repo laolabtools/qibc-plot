@@ -28,7 +28,7 @@ There is nothing to install.
 - **Online:** open **[lao-labtools.org/qibc](https://lao-labtools.org/qibc/)**.
 - **Offline:** download [`index.html`](index.html) (open it on GitHub and press the download button) and double-click it. It opens in Chrome, Edge, Safari or Firefox and runs from your disk.
 
-Press **Load example data (Nuclei.csv)** to see a finished analysis, or choose your own CellProfiler CSV.
+Press **Load example data (Nuclei.csv)** to see a finished analysis of a simulated two-condition experiment, or choose your own CellProfiler CSV.
 
 ## How to use
 
@@ -69,6 +69,7 @@ There is no build step. `index.html` *is* the source: the app's own code is plai
 | file | contents |
 |---|---|
 | `index.html` | the complete app: markup, styles, bundled Plotly.js v3.6.0, app code and the example dataset |
+| `example/make_example.py` | the script that generates the built-in example table (Python 3 + NumPy): `python3 example/make_example.py Nuclei.csv` |
 
 ## Reporting bugs and requesting features
 
@@ -80,9 +81,9 @@ Please use **[GitHub Issues](https://github.com/laolabtools/qibc-plot/issues)** 
 
 ## Acknowledgements and references
 
-**Where it comes from.** QIBC Plot is a browser reimplementation of **[qibcPlot](https://github.com/callum-jpg/qibcPlot)** by **callum-jpg**: R/ggplot2 scripts, an example CellProfiler pipeline and an example dataset for making QIBC 3-variable scatter and dot-bar plots. The plot designs, the choice of DNA integrated intensity vs. marker mean intensity coloured by a third channel, and the blue per-condition mean line all follow qibcPlot. No R code was copied; the app was written independently in JavaScript.
+**Where it comes from.** QIBC Plot is a browser reimplementation of **[qibcPlot](https://github.com/callum-jpg/qibcPlot)** by **callum-jpg**: R/ggplot2 scripts and an example CellProfiler pipeline for making QIBC 3-variable scatter and dot-bar plots. The plot designs, the choice of DNA integrated intensity vs. marker mean intensity coloured by a third channel, and the blue per-condition mean line all follow qibcPlot. No R code was copied; the app was written independently in JavaScript.
 
-**Example data.** The built-in example (`Nuclei.csv`, 3,563 nuclei) is the example dataset distributed in the [qibcPlot repository](https://github.com/callum-jpg/qibcPlot/tree/master/example-data). It is included only to demonstrate the app; all rights in it remain with its author.
+**Example data.** The built-in example (`Nuclei.csv`, 3,707 nuclei in two conditions) is **simulated**: every value comes from a simple cell-cycle model in [`example/make_example.py`](example/make_example.py) (G1/S/G2 DNA content, an S-phase marker in Cy5, a treatment-induced damage marker in mCherry and a GFP reporter), laid out in the same columns as a CellProfiler per-nucleus export. It contains no measurements from any real experiment.
 
 **Method.**
 - Toledo LI *et al.* ATR prohibits replication catastrophe by preventing global exhaustion of RPA. *Cell* 155, 1088–1103 (2013). [doi:10.1016/j.cell.2013.10.043](https://doi.org/10.1016/j.cell.2013.10.043). This paper introduced QIBC.
@@ -99,8 +100,6 @@ Please use **[GitHub Issues](https://github.com/laolabtools/qibc-plot/issues)** 
 In plain terms (the licence text is what counts): you may use, copy, modify and share this software for research, teaching, study and any other non-commercial purpose, including at universities, hospitals, non-profit research institutes and government laboratories. **Commercial use**, such as use by or for a company, in industry R&D, contract research or a paid service, is not covered and needs a separate licence; to ask about one, open an issue in this repository.
 
 **Third-party code.** Plotly.js v3.6.0 (MIT) and the components it bundles keep their own licences; their notices are preserved inside `index.html`.
-
-**Example data.** The bundled `Nuclei.csv` example belongs to the author of qibcPlot and is not covered by this licence.
 
 ## Disclaimer
 
