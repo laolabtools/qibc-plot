@@ -78,16 +78,6 @@ Please use **[GitHub Issues](https://github.com/laolabtools/qibc-plot/issues)** 
 - your browser and operating system;
 - a screenshot, and if you can, a few rows of your CSV so the problem can be reproduced (remove anything confidential first).
 
-If you would rather not post publicly, email [contact@lao-labtools.org](mailto:contact@lao-labtools.org).
-
-## Citing
-
-If this tool contributed to published work, please cite it as:
-
-> Lao L. *QIBC Plot: browser-based quantitative image-based cytometry plotting*. 2026. https://github.com/laolabtools/qibc-plot
-
-Please also cite the methods and resources it is built on (listed below), in particular qibcPlot, the original QIBC method and CellProfiler.
-
 ## Acknowledgements and references
 
 **Where it comes from.** QIBC Plot is a browser reimplementation of **[qibcPlot](https://github.com/callum-jpg/qibcPlot)** by **callum-jpg**: R/ggplot2 scripts, an example CellProfiler pipeline and an example dataset for making QIBC 3-variable scatter and dot-bar plots. The plot designs, the choice of DNA integrated intensity vs. marker mean intensity coloured by a third channel, and the blue per-condition mean line all follow qibcPlot. No R code was copied; the app was written independently in JavaScript.
@@ -106,7 +96,7 @@ Please also cite the methods and resources it is built on (listed below), in par
 
 **Free for academic and other non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE).
 
-In plain terms (the licence text is what counts): you may use, copy, modify and share this software for research, teaching, study and any other non-commercial purpose, including at universities, hospitals, non-profit research institutes and government laboratories. **Commercial use**, such as use by or for a company, in industry R&D, contract research or a paid service, is not covered and needs a separate licence. Contact [contact@lao-labtools.org](mailto:contact@lao-labtools.org).
+In plain terms (the licence text is what counts): you may use, copy, modify and share this software for research, teaching, study and any other non-commercial purpose, including at universities, hospitals, non-profit research institutes and government laboratories. **Commercial use**, such as use by or for a company, in industry R&D, contract research or a paid service, is not covered and needs a separate licence; to ask about one, open an issue in this repository.
 
 **Third-party code.** Plotly.js v3.6.0 (MIT) and the components it bundles keep their own licences; their notices are preserved inside `index.html`.
 
