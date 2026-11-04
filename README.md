@@ -69,6 +69,7 @@ There is no build step. `index.html` *is* the source: the app's own code is plai
 | file | contents |
 |---|---|
 | `index.html` | the complete app: markup, styles, bundled Plotly.js v3.6.0, app code and the example dataset |
+| `THIRD-PARTY-NOTICES.md` | full licence texts of the bundled Plotly.js and its components |
 | `example/make_example.py` | the script that generates the built-in example table (Python 3 + NumPy): `python3 example/make_example.py Nuclei.csv` |
 
 ## Reporting bugs and requesting features
@@ -99,7 +100,7 @@ Please use **[GitHub Issues](https://github.com/laolabtools/qibc-plot/issues)** 
 
 In plain terms (the licence text is what counts): you may use, copy, modify and share this software for research, teaching, study and any other non-commercial purpose, including at universities, hospitals, non-profit research institutes and government laboratories. **Commercial use**, such as use by or for a company, in industry R&D, contract research or a paid service, is not covered and needs a separate licence; to ask about one, open an issue in this repository.
 
-**Third-party code.** Plotly.js v3.6.0 (MIT) and the components it bundles keep their own licences; their notices are preserved inside `index.html`.
+**Third-party code.** The bundled Plotly.js v3.6.0 and the components inside it keep their own MIT and BSD-3-Clause licences. Their full texts are in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and are also embedded in `index.html`.
 
 ## Disclaimer
 
